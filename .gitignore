@@ -1,4 +1,5 @@
 package-lock.json
+src/javascripts/helpers/apiKeys.json
 node_modules/
 dist/
 build/
