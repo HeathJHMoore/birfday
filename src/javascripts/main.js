@@ -1,8 +1,11 @@
 import 'bootstrap';
 import '../styles/main.scss';
+import auth from './components/Auth/auth';
+import birfday from './components/Birthday/birthday';
 
 const init = () => {
-  console.error('yo yo');
+  auth.authStringBuilder();
+  birfday.birfdayStringBuilder();
 };
 
 init();
