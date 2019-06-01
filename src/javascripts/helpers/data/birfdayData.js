@@ -8,12 +8,10 @@ const getBirfdayByUid = uid => new Promise((resolve, reject) => {
     .then((results) => {
       const birthdayResults = results.data;
       const birthdays = [];
-      console.error(birthdayResults);
       Object.keys(birthdayResults).forEach((birthdayId) => {
         birthdayResults[birthdayId].id = birthdayId;
         birthdays.push(birthdayResults[birthdayId]);
       });
-      console.error(birthdays);
       resolve(birthdays[0]);
     })
     .catch(err => reject(err));

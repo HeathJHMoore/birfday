@@ -13,7 +13,6 @@ const getRsvpsByBirthdayId = birthdayId => new Promise((resolve, reject) => {
         rsvpsResults[RsvpsId].id = RsvpsId;
         rsvps.push(rsvpsResults[RsvpsId]);
       });
-      console.error(rsvps);
       resolve(rsvps);
     })
     .catch(err => reject(err));
